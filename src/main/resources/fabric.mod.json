@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fartboy",
+	"version": "${version}",
+	"name": "maxima",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/fartboy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.farts.Fartboy"
+		],
+		"fabric-datagen": [
+			"name.farts.FartboyDataGenerator"
+		],
+		"Client": [
+			"name.farts.mixin.fartboyclient"
+		]
+	},
+	"mixins": [
+		"fartboy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
